@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <style>
+      fieldset {
+        width: 450px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Ficha de cliente</legend>
+      <br />
+      <label for="">Status: </label>
+      <input type="text" list="status" placeholder="Qual é o status?" />
+      <datalist id="status">
+        <option>novo</option>
+        <option>ativo</option>
+        <option>inativo</option>
+      </datalist>
+      <br /><br />
+      <label>Nome:</label>
+      <br />
+      <input type="text" placeholder="Nome completo" />
+      <br /><br />
+      <label>Celular:</label>
+      <br />
+      <input type="tel" placeholder="(21)98765-4321" />
+      <br /><br />
+      <label>E-mail:</label>
+      <br />
+      <input type="email" placeholder="email@dominio.com" />
+      <br /><br />
+      <label>Informações complementares:</label>
+      <br />
+      <textarea
+        cols="50"
+        rows="10"
+        placeholder="Venda - data, produto e valor, 
+        informações pessoais"
+      ></textarea>
+      <br /><br />
+      <label>Preferência de contato:</label>
+      <input type="checkbox" /> WhatsApp <input type="checkbox" /> E-mail
+      <br /><br />
+      <button type="submit" style="background: gray">Enviar</button>
+    </fieldset>
+  </body>
+</html>
